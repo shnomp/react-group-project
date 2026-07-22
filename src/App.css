@@ -1,3 +1,8 @@
 .comic-sans-font {
     font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
 }
+
+.traits-grid {
+    display: grid;
+    grid-template-columns: 25% 25%;
+}
