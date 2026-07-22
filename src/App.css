@@ -5,32 +5,44 @@
 .traits-grid {
     display: grid;
     grid-template-columns: 25% 25%;
+    gap: 8px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-.calculatorbase {
+body {
+    background: rgba(255, 208, 0, 0.406)
+}
+
+.title {
+    text-align: center;
+}
+
+.calculator-base {
     background: rgb(39, 116, 174); 
     padding: 16px;
     border-radius: 26px;
     align-items: center;
-
-
+    box-sizing: border-box;
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
 
 }
 
-.displaybar {
+.display-bar {
     background: rgb(255, 255, 255);
     padding: 16px;
     text-align: right;
+    border-radius: 13px;
+    box-sizing: border-box;
+    width: 100%;
 
 
 }
 
-.displaynumber {
+.display-value {
     color: rgb(39, 116, 174);
     font-size: 30px;
 }
 
-.operatorbutton {
-    background: rgba(255, 208, 0, 0.731)
-    
-}

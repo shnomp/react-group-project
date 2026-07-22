@@ -27,10 +27,18 @@ export default function App() {
   }
 
   return (
-    <div className='comic-sans-font'>
+    <>
+    <div className='title'>
       <h1>the meme calculator</h1>
       <h2 style={{fontSize: "16px"}}>click two different traits to combine them to output a meme</h2>
       <p style={{fontSize: "12px"}}>(use at your own risk)</p>
+      </div>
+
+      <div className = 'calculator-base'> 
+      <div className = 'display-bar'>
+        <span className = 'display-value'> {output} </span>
+        </div>
+
       <div className='traits-grid'>
         <button onClick={() => {handleClick("absurd")}}>absurd</button>
         <button onClick={() => {handleClick("confusing")}}>confusing</button>
@@ -45,5 +53,6 @@ export default function App() {
         <h2>{output}</h2>
       </div>
     </div>
+    </>
   );
 }
