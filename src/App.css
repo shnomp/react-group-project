@@ -2,7 +2,35 @@
     font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
 }
 
-.foo {
-    background: white;
+.traits-grid {
+    display: grid;
+    grid-template-columns: 25% 25%;
+}
 
+.calculatorbase {
+    background: rgb(39, 116, 174); 
+    padding: 16px;
+    border-radius: 26px;
+    align-items: center;
+
+
+
+}
+
+.displaybar {
+    background: rgb(255, 255, 255);
+    padding: 16px;
+    text-align: right;
+
+
+}
+
+.displaynumber {
+    color: rgb(39, 116, 174);
+    font-size: 30px;
+}
+
+.operatorbutton {
+    background: rgba(255, 208, 0, 0.731)
+    
 }
