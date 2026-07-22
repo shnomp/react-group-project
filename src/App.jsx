@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 
 export default function App() {
   function handleClick() {
@@ -9,10 +10,9 @@ export default function App() {
     <div className='comic-sans-font'>
       <h1>the meme calculator</h1>
       <p>use at your own risk</p>
-      <div style={{ padding: '1em' }}>
-        <button style={{ fontFamily: "fantasy" }} onClick={handleClick}>
-          Click Me
-        </button>
+      <div>
+        <button>absurd</button>
+        <button>confusing</button>
       </div>
     </div>
   );
