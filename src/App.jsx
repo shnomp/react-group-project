@@ -1,9 +1,11 @@
 import './App.css';
 import { useState } from 'react';
+import { calculate } from "./logic"
 
 export default function App() {
   const [trait1, setTrait1] = useState("")
   const [trait2, setTrait2] = useState("")
+  const [output, setOutput] = useState("")
 
   let handleClick = (trait) => {
     if (trait1 === "") {
@@ -15,7 +17,13 @@ export default function App() {
     else {
       setTrait1("")
       setTrait2("")
+      setOutput("")
     }
+  }
+
+  let calculateHandle = () => {
+    let result = calculate(trait1, trait2);
+    setOutput(result);
   }
 
   return (
@@ -30,10 +38,11 @@ export default function App() {
         <button onClick={() => {handleClick("modern")}}>modern</button>
       </div>
       <div>
-        <button>calculate</button>
+        <button onClick = {calculateHandle}> calculate</button>
       </div>
       <div>
         <h2>{trait1 + "+" + trait2}</h2>
+        <h2>{output}</h2>
       </div>
     </div>
   );
