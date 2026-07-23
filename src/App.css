@@ -1,17 +1,18 @@
-.comic-sans-font {
-    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
-}
+
 
 .traits-grid {
     display: grid;
-    grid-template-columns: 25% 25%;
-    gap: 8px;
+    grid-template-columns: 49% 49%;
     box-sizing: border-box;
     width: 100%;
+    gap: 2%;
+    
 }
 
 body {
-    background: rgba(255, 208, 0, 0.406)
+    background: rgba(250, 163, 215, 0.734);
+    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+
 }
 
 .title {
@@ -27,6 +28,7 @@ body {
     width: 700px;
     text-align: center;
     margin: 0 auto;
+    border: 2px solid rgb(255, 208, 0) 
 
 }
 
@@ -44,5 +46,27 @@ body {
 .display-value {
     color: rgb(39, 116, 174);
     font-size: 30px;
+}
+
+.traits-button {
+    background: rgba(255, 208, 0, 0.937);
+    border-radius: 14px;
+    padding: 14px;
+    margin-top: 12px;
+    border: 2px solid rgb(255, 208, 0);
+    font-size: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+
+}
+
+.calculate-button {
+    background: rgb(245, 240, 94);
+    border-radius: 14px;
+    padding: 14px;
+    margin-top: 12px;
+    width: 100%;
+    border: 2px solid rgb(243, 228, 94);
+    font-size: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
 }
 

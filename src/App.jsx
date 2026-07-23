@@ -39,9 +39,9 @@ export default function App() {
   return (
     <>
     <div className='title'>
-      <h1>the meme calculator</h1>
-      <h2 style={{fontSize: "16px"}}>click two different traits to combine them to output a meme</h2>
-      <p style={{fontSize: "12px"}}>(use at your own risk)</p>
+      <h1>The Meme-ulator</h1>
+      <h2 style={{fontSize: "18px"}}>click two different traits to combine them to output a meme</h2>
+      <p style={{fontSize: "14px"}}>(use at your own risk)</p>
       </div>
 
       <div className = 'calculator-base'> 
@@ -50,13 +50,13 @@ export default function App() {
       </div>
 
       <div className='traits-grid'>
-        <button onClick={() => {handleClick("absurd")}}>absurd</button>
-        <button onClick={() => {handleClick("strange")}}>strange</button>
-        <button onClick={() => {handleClick("classic")}}>classic</button>
-        <button onClick={() => {handleClick("modern")}}>modern</button>
+        <button className = 'traits-button' onClick={() => {handleClick("absurd")}}>absurd</button>
+        <button className = 'traits-button' onClick={() => {handleClick("strange")}}>strange</button>
+        <button className = 'traits-button' onClick={() => {handleClick("classic")}}>classic</button>
+        <button className = 'traits-button' onClick={() => {handleClick("modern")}}>modern</button>
       </div>
       <div>
-        <button onClick = {calculateHandle}> calculate</button>
+        <button className = 'calculate-button' onClick = {calculateHandle}> calculate</button>
       </div>
       <div>
         <h2>{trait1 + "+" + trait2}</h2>
