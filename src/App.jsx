@@ -12,6 +12,9 @@ export default function App() {
       setTrait1(trait)
     }
     else if (trait2 === "") {
+      if (trait === trait1){
+        return;
+      }
       setTrait2(trait)
     }
     else {
