@@ -1,28 +1,35 @@
+import garfield from './assets/garfield.jpg';
+import rickroll from './assets/rickroll-roll.gif';
+import sixSeven from './assets/six-seven.gif';
+import brainrot from './assets/Tralalero_Tralala.webp';
+import johnCena from './assets/john-cena.gif';
+import chungus from './assets/Big_Chungus.png';
+
 export function calculate(trait1,trait2){
-    let output = "";
+    let output = NaN;
     // "Be Careful Around the Fabric of Reality, Garfield"
     if ((trait1 === "absurd" && trait2 === "strange") || (trait1 === "strange" && trait2 === "absurd")) {
-        output = "1";
+        output = garfield;
     }
     // Rickroll
     else if ((trait1 === "classic" && trait2 === "modern") || (trait1 === "modern" && trait2 === "classic")) {
-        output = "2";
+        output = rickroll;
     }
     // 67 Meme
     else if ((trait1 === "absurd" && trait2 === "modern") || (trait1 === "modern" && trait2 === "absurd")) {
-        output = "3";
+        output = sixSeven;
     }
     // Italian Brainrot
     else if ((trait1 === "modern" && trait2 === "strange") || (trait1 === "strange" && trait2 === "modern")) {
-        output = "4";
+        output = brainrot;
     }
     // And His Name is John Cena
     else if((trait1 === "absurd" && trait2 === "classic") || (trait1 === "classic" && trait2 === "absurd")) {
-        output = "5";
+        output = johnCena;
     }
     // Big Chungus
     else if((trait1 === "strange" && trait2 === "classic") || (trait1 === "classic" && trait2 === "strange")) {
-        output = "6";
+        output = chungus;
     }
 
     return output;

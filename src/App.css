@@ -33,7 +33,7 @@ body {
 .display-bar {
     background: rgb(255, 255, 255);
     padding: 16px;
-    text-align: right;
+    text-align: center;
     border-radius: 13px;
     box-sizing: border-box;
     width: 100%;
