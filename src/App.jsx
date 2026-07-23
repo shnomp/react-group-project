@@ -41,7 +41,7 @@ export default function App() {
 
       <div className='traits-grid'>
         <button onClick={() => {handleClick("absurd")}}>absurd</button>
-        <button onClick={() => {handleClick("confusing")}}>confusing</button>
+        <button onClick={() => {handleClick("strange")}}>strange</button>
         <button onClick={() => {handleClick("classic")}}>classic</button>
         <button onClick={() => {handleClick("modern")}}>modern</button>
       </div>
